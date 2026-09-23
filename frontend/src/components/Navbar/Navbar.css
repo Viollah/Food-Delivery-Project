@@ -1,0 +1,158 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo {
+    width: 150px;
+
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navbar-search{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.navbar-search input{
+    width: 150px;
+    padding: 7px 10px;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    outline: none;
+    color: #49557e;
+}
+.navbar-search-button{
+    border: none !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.navbar-search-button:hover{
+    background-color: transparent !important;
+}
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid #79c98a;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar button:hover{
+    background-color: #fff4f2;
+
+}
+.navbar-profile{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #49557e;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 180px;
+}
+.navbar-profile img{
+    width: 24px;
+    height: 24px;
+}
+.navbar-profile span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.navbar-logout{
+    border: none !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.navbar-logout:hover{
+    background-color: transparent !important;
+}
+.navbar-logout img{
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    filter: brightness(0) saturate(100%) invert(32%) sepia(12%) saturate(1270%) hue-rotate(187deg) brightness(92%) contrast(89%);
+}
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+.navbar li{
+    cursor: pointer;
+}
+.narbar-search-icon{
+    position: relative;
+}
+.narbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: #79c98a;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+@media (max-width:1050px){
+    .navbar .logo{
+        width: 140px;
+    }
+    .navbar-menu{
+        gap:20px;
+        font-size: 17px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+    }
+}
+@media (max-width:900px){
+    .navbar .logo{
+        width: 120px;
+    }
+    .navbar-menu{
+        gap:15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+@media (max-width:750px){
+    
+    .navbar-menu{
+       display: none;
+    }
+   
+}
+
+ 
